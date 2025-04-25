@@ -31,7 +31,6 @@ services:
       - elasticsearch
     networks:
       - elastic
-      -
   keycloak:
     image: quay.io/keycloak/keycloak
     ports:

@@ -13,10 +13,10 @@ import org.springframework.data.elasticsearch.annotations.FieldType;
 @Builder
 public class Address {
 
-    @Field(type = FieldType.Keyword) // for full search on elasticsearch
+    @Field(type = FieldType.Keyword) // for exact matching
     private String streetNumber;
 
-    @Field(type = FieldType.Text)
+    @Field(type = FieldType.Text) // for searchable matching
     private String streetName;
 
     @Field(type = FieldType.Keyword)
